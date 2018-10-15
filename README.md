@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/147532251.svg)](https://zenodo.org/badge/latestdoi/147532251)
+
 # On the detectability of eccentric binary pulsars, Bagchi, Lorimer, Wolfe, 2013, MNRAS
 
 This repository holds the Fortran code written and developed by Bagchi, et al. in their analysis on the degradation factor for pulsars in binary orbits ([link to paper](http://adsabs.harvard.edu/abs/2013MNRAS.432.1303B)). The original host for the code on the WVU webpage is not available, and hence the code has been moved here with permission from the authors. This code is publicly available for use contingent on appropriate credit and citation to the paper above.
