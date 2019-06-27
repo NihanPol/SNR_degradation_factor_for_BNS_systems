@@ -13,7 +13,9 @@ In addition to the code, we also provide a few example parameter files. These pa
 While the above code is written in Fortran, we have modified it so that it can be called into Python as a package and the degradation factor calculation can be called as a function in Python. If you do use this feature, please make sure to cite this package with the DOI given above.
 
 This can be done using NumPy's f2py [functionality](https://docs.scipy.org/doc/numpy/f2py/). In this case, using the *.f90* files provided in this repository, do:
-` python -m numpy.f2py -c xxx.f90 -m name_of_module`
+
+`python -m numpy.f2py -c xxx.f90 -m name_of_module`
+
 where xxx.f90 is the code you want to work with (e.g. gamma1_real.f90) and "name_of_module" is the name of the python module corresponding to gamma1_real.f90. This will produce a "name_of_module.so" file.
 
 Once that is done, in Python in the same folder where the "name_of_module.so" file lives, you can do
@@ -25,10 +27,12 @@ import name_of_module #From the above command
 print(name_of_module.degfac.__doc__)
 #This should print out a function signature and the input and output parameters
 
-#This will now behave as a standard python function, where the different parameters can be passed through positional arguments.
+#This will now behave as a standard python function, where the 
+different parameters can be passed through positional arguments.
 #In case you miss a variable, the code will throw an error.
 
-#As a test, try executing the function using the parameters given in one of the *.in files available in this repository.
+#As a test, try executing the function using the parameters 
+given in one of the *.in files available in this repository.
 ```
 
 If something does not work as advertised above, please get in touch with me and I will work on finding a fix.
